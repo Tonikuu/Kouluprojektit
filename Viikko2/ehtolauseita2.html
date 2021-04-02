@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="nextlevelnot.css">
+    <script src="ehtolauseita2.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chango&family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
+    <title>Ehtolauseita 2.0</title>
+</head>
+<body>
+    <h1 style="text-align: center">Ehtolauseita 2.0 </h1>
+
+<article class="artikkeli" id="art1">
+    <h1>Tehtävä 1</h1>
+    <p>Tämä kertoo onko syötetty arvo negatiivinen vaiko positiivinen</p>
+    <form action="ehtolauseita2.js">
+        <label for="nro">Syötä numero:</label><br>
+        <input type="number" id="nro" name="nro" value=0><br>
+        <button type="button" name="button" onclick="negaVaiEi()">Laske</button>
+        <p id="vastaus1"></p>    
+    </form>
+</article>
+
+    
+<article class="artikkeli" id="art2">
+    <h1>Tehtävä 2</h1>
+    <p>Tämä kertoo mikä viikonpäivä syöttämäsi luku on (päivät 1-7)</p>
+        <form action="ehtolauseita2.js">
+            <label for="vko">Syötä viikonpäivän numero</label><br>
+            <input type="number" id="vko" name="vko" value=1><br>
+            <button type="button" name="button" onclick="viikonpäivä()">Laske</button>
+            <p id="vastaus2"></p>
+        </form>
+</article>
+
+    
+<article class="artikkeli" id="art3">
+    <h1>Tehtävä 3</h1>
+    <p>Tämä kertoo onko syötetty vuosiluku ollut karkausvuosi</p>
+        <form action="ehtolauseita2.js">
+            <label for="vuosi">Syötä vuosiluku</label><br> 
+            <input type="number" id="vuosi" name="vuosi" value=0><br>
+            <button type="button" name="button" onclick="vuosiluku()">Laske</button>
+            <p id="vastaus3"></p>
+        </form>
+</article>
+
+    
+<article class="artikkeli" id="art4">
+    <h1>Tehtävä 4</h1>
+    <p>Tämä kertoo lukujen summan ja keskiarvon</p>
+        <form action="ehtolauseita2.js">
+            <label for="summaKa">Syötä 5 lukua</label><br>
+            <input type="number" id="ekaluku" name="summaKa" value=0><br>
+            <input type="number" id="tokaluku" name="summaKa" value=0><br>
+            <input type="number" id="kolmasluku" name="summaKa" value=0><br>
+            <input type="number" id="neljäsluku" name="summaKa" value=0><br>
+            <input type="number" id="viidesluku" name="summaKa" value=0><br>
+            <button type="button" name="button" onclick="summaa()">Laske</button>
+            <p id="vastaus4"></p>
+        </form>
+</article>
+
+    
+<article class="artikkeli" id="art5">
+    <h1>Tehtävä 5</h1>
+    <p>Näyttää valitun luvun kertotaulun</p>
+    <form action="ehtolauseita2.js">
+        <label for="lause">Syötä luku</label><br>
+        <input type="number" id="luku" name="luku" value=0<br>
+        <button type="button" name="button" onclick="lauseke()">Laske</button>
+        <p id="vastaus5"></p>
+    </form>
+
+</article>
+
+</body>
+</html>

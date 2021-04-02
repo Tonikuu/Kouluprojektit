@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="ehtolauseita.js"></script>
+        <link rel="stylesheet" href="nojotainvariavaan.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+        <title>Ehtolauseita 1.0</title>
+    </head>
+    <body>
+        <h1 style="text-align: center">Ehtolauseita 1.0 </h1>
+        <article class="artikkeli" id="art1">
+        <h1>Tehtävä 1</h1>
+        <p>Järkkää annetut numerot järjestykseen</p>
+        
+            <form>
+                <label for="nro1">Syötä eka numero</label><br>
+                <input type="number" id="eka" name="nro1" value=0><br>
+                <label for="nro2">Syötä toka numero</label><br>
+                <input type="number" id="toka" name="nro2" value=0><br>
+                <label for="nro3">Syötä kolmas numero</label><br>
+                <input type="number" id="kolmas" name="nro3" value=0><br>
+                <button type="button" name="button" onclick="järjestä()">Järjestä</button>
+                <h4 id="vastaus1">Vastaus tulostuu tähän</h4>
+                </form>
+    </article>
+        
+    <article class="artikkeli" id="art2">
+        <h1>Tehtävä 2</h1>
+        <p>Valitsee annetuista luvuista pienimmän ja suurimman</p>
+
+        
+            <form>
+                <label for="nro1">Syötä eka numero</label><br>
+                <input type="number" id="tehtävä2.1" name="nro1" value=0><br>
+                <label for="nro2">Syötä toka numero</label><br>
+                <input type="number" id="tehtävä2.2" name="nro2" value=0><br>
+                <label for="nro3">Syötä kolmas numero</label><br>
+                <input type="number" id="tehtävä2.3" name="nro3" value=0><br>
+                <label for="nro4">Syötä neljäs numero</label><br>
+                <input type="number" id="tehtävä2.4" name="nro4" value=0><br>
+                <label for="nro5">Syötä viides numero</label><br>
+                <input type="number" id="tehtävä2.5" name="nro5" value=0><br>
+                <button type="button" name="button" onclick="pienisuuri()">Selvitä</button>
+                <h4 id="vastaus2">Vastaus tulostuu tähän</h4>
+            </form>
+        </article>
+
+    <article class="artikkeli" id="art3">
+            <h1>Tehtävä 3</h1>
+            <p>Kertoo onko annettu luku parillinen vai pariton</p>
+
+            <form>
+                <label for="luku">Syötä jokin luku</label><br>
+                <input type="number" id="tehtävä3" name="luku" value=0><br>
+                <button type="button" name="button" onclick="pariVaiEi()">Kerro kerro kuvastin</button>
+                <h4 id="vastaus3">Vastaus tulostuu tähän</h4>
+            </form>
+        </article>
+
+    <article class="artikkeli" id="art4">
+            <h1>Tehtävä 4</h1>
+            <p>Kertoo millä vempeleellä saat iän puolesta ajjaapi</p>
+
+            <form>
+                <label for="ikä">Syötä ikä</label><br>
+                <input type="number" id="ikä" name="ikä" value=1><br>
+                <button type="button" name="button" onclick="ika()">No kerros mulle</button>
+                <h4 id="vastaus4">Vastaus tulostuu tähän</h4>
+            </form>
+    </article>
+
+    <article class="artikkeli" id="art5">
+        <h1>Tehtävä 5</h1>
+        <p>Kääntää sanan "Hei Maailma!" valituille kielille (englanti, ruotsi, espanja, extrana myöskin viro)</p>
+
+        <p>Valitse kieli</p>
+         <select id="kieli">
+         <option value="eng">Englanti</option>
+         <option value="swe">Ruotsi</option>
+         <option value="esp">Espanja</option>
+         <option value="est">Viro</option>
+         </select>
+         <button type="button" name="button" onclick="kaanna()">Käännä</button>
+         <p id="vastaus5">Käännös tulostuu tähän</p>
+        </form>
+    </article>
+
+        
+
+        
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,47 @@
+h1
+{
+font-family: 'Chango', cursive;
+}
+
+#art1
+{
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: bold;
+    background-color: linen;
+}
+
+#art2
+{
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: bold;
+    background-color: mediumslateblue;
+}
+
+#art3
+{
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: bold;
+    background-color: orchid;
+}
+
+#art4
+{
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: bold;
+    background-color: rosybrown;
+}
+
+#art5
+{
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: bold;
+    background-color: royalblue;
+}
+.artikkeli
+{
+    width: 15%;
+    padding: 1%;
+    margin: 1%;
+    margin-right: 1%;
+    float:left;
+}

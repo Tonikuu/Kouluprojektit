@@ -1,0 +1,50 @@
+h1
+{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+p
+{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
+}
+
+#art1
+{
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: aquamarine;
+    
+   
+}
+
+#art2
+{
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: coral;
+}
+
+#art3
+{
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: darkgray;
+}
+
+#art4
+{
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: hotpink;
+}
+
+#art5
+{
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: lightgreen;
+}
+.artikkeli
+{
+    width: 15%;
+    padding: 1%;
+    margin: 1%;
+    margin-right: 1%;
+    float:left;
+}

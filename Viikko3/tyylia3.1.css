@@ -1,0 +1,19 @@
+.artikkeli
+{
+    width: 15%;
+    padding: 1%;
+    margin: 1%;
+    margin-right: 1%;
+    float:left;
+}
+
+h1
+{
+    font-family: 'Bebas Neue', cursive;
+}
+
+#art1
+{
+    background-color: aquamarine;
+    font-family: 'Bebas Neue', cursive;
+}
