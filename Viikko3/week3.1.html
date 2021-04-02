@@ -12,15 +12,47 @@
     <body>
         <h1 style="text-align: center;">Week 3.1</h1>
         <article class="artikkeli" id="art1">
-            <h1>Tehtävä1</h1>
+            <h1>Tehtävä 1</h1>
             <p>Syötä luku, ohjelma tulostaa kaikki parilliset<br> 
                 luvut annettuun lukuun asti, poislukien 0:n</p>
-               <p> <input type="text" id="1task" value=""></p>
-               <button type="button" name="button" onclick="parilliset()">Tulosta parilliset</button>
+               <input type="number" id="1task" placeholder="Syötä luku">
+               <button style="margin-top: 3%;" type="button" name="button" onclick="parilliset()">Tulosta parilliset</button><br>
+               <p id="tulos">Luvut tulostuvat tähän...</p>
                 
         </article>
 
+        <article class="artikkeli" id="art2">
+            <h1>Tehtävä 2</h1>
+            <p>Muuntaa annetun sanan "salasanaksi", laittaa joka toisen kirjaimen jälkeen kirjaimen iso Ö</p>
+            <input type="text" id="2task" placeholder="Syötä sana">
+            <button style="margin-top: 3%;" type="button" name="button" onclick="salasana()">Muunna</button><br>
+            <p id="tulos2">Salasana tulostuu tähän</p>
 
+        </article>
+
+        <article class="artikkeli" id="art3">
+            <h1>Tehtävä 3</h1>
+            <p>Tarkistaa onko syötetyssä sanassa ö-kirjainta</p>
+            <input type="text" id="3task" placeholder="Syötä sana">
+            <button style="margin-top: 3%;" type="button" name="button" onclick="onkoVaiEi()">Tarkista onko ö:tä</button><br>
+            <p id="tulos3">Vastaus tulostuu tähän</p>
+        </article>
+
+        <article class="artikkeli" id="art4">
+            <h1>Tehtävä 4</h1>
+            <p>Laskee annetun luvun kertoman</p>
+            <input type="number" id="4task" placeholder="Syötä luku">
+            <button style="margin-top: 3%;" type="button" name="button" onclick="kertoma()">Anna kertoma</button>
+            <p id="tulos4">Kertoma tulostuu tähän</p>
+        </article>
+
+        <article class="artikkeli" id="art5">
+            <h1>Tehtävä 5</h1>
+            <p>Tulostaa luvut 1-100<br> - Jos luku on jaollinen 3:lla, tulostaa hip<br>- Jos luku on jaollinen 5:llä, tulostaa heijaa<br>- Jos luku on jaollinen sekä 5:llä että 3:lla,   tulostaa
+            hipheijaa</p>
+            <button style="margin-top: 3%;" type="button" name="button" onclick="jyrinHeijaa()">Näytäppä hipheijaat</button>
+            <p id="tulos5">Tähän tulee hipheijaat</p>
+        </article>
 
     </body>
 </html>
