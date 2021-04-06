@@ -27,7 +27,7 @@ function salasana(){
 function onkoVaiEi(){
     var sana = document.getElementById("3task").value;
     var tarkista = sana.search(/ö/i);
-    console.log(tarkista);
+    
 
     if(tarkista === -1)
     {
@@ -71,4 +71,51 @@ function jyrinHeijaa(){
         }
         document.getElementById("tulos5").innerHTML = tulos;
     }
+}
+
+function yhestKybää(){
+    var luku = "<p>";
+
+    for(var i = 1; i <= 10; i++)
+    {
+        luku += i + " ";
+    }
+    luku += "</p>";
+    document.getElementById("tulos6").innerHTML = luku;
+}
+
+function yhteen(){
+    var yht = 0;
+
+    for(var i = 1; i <= 10; i++)
+    {
+        yht += i;
+    }
+    document.getElementById("tulos7").innerHTML = "<p>" + yht + "</p>";
+}
+
+function potenssi()
+{
+ var korotus = document.getElementById("ekaluku").value;
+ var potenssi = document.getElementById("tokaluku").value;
+ yhteensä = korotus;
+ for(var i = 1; i < potenssi; i++)
+ {
+     yhteensä *= korotus;
+ }   
+
+ document.getElementById("tulos8").innerHTML = "<p>" + yhteensä + "</p>";
+}
+
+function suurinPienin()
+{
+    var taulu = [], temp;
+    for(var i = 0; i < 5; i++)
+    {
+        temp = document.getElementById('taulukko['+i+']').value;
+       // temp = parseInt(temp);
+        taulu.push(temp);
+    }
+    taulu = taulu.sort((a,b) => a-b);
+    document.getElementById("tulos9").innerHTML = "<p>Pienin luku: " + taulu[0] + "<br> ja suurin luku on: " + taulu[taulu.length-1];
 }
