@@ -119,3 +119,51 @@ function suurinPienin()
     taulu = taulu.sort((a,b) => a-b);
     document.getElementById("tulos9").innerHTML = "<p>Pienin luku: " + taulu[0] + "<br> ja suurin luku on: " + taulu[taulu.length-1];
 }
+
+function salis()
+{
+    var sana = document.getElementById("salisRandom").value;
+    var salasana = "<p>";
+    var aakkoset = "abcdefghjiklmnopqrstuvwxyzåäö"
+
+    for(var j = 0; j < sana.length; j++)
+    {
+        salasana += sana[j] + aakkoset.charAt(Math.floor(Math.random()*29));
+    }
+    salasana += "</p>";
+    document.getElementById("tulos10").innerHTML = salasana;
+}
+function kaksiNumeroa()
+{
+    var nro1, nro2, palku, ralku, psumma=0, rsumma=0, pluvut="",rluvut="";
+    nro1 = parseInt(document.getElementById("seEka").value);
+    nro2 = document.getElementById("seToka").value;
+    
+    if(nro1%2 == 0)
+    {
+        palku = nro1;
+    }
+    else {
+        palku = nro1+1;
+    }
+    for(var b = palku; b <= nro2; b+=2)
+    {
+        pluvut += b + " ";
+        psumma += b;
+
+    }
+
+    if(nro1%2 == 0)
+    {
+        ralku = nro1+1;
+    }
+    else{
+        ralku = nro1;
+    }
+    for(var r = ralku; r<=nro2; r+=2)
+    {
+        rluvut += r +" ";
+        rsumma += r;
+    }
+    document.getElementById("tulos11").innerHTML = "<p>Parilliset numerot: " + pluvut + " ja niiden summa: " + psumma + "</p><p>Parittomat luvut: " + rluvut + " ja niiden summa: " + rsumma + "</p>";
+}

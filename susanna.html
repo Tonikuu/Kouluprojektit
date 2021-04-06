@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lomake</title>
+<script>
+    function validateForm() {
+    var nimi = document.forms["contact-form"]["name"].value;
+    var maili = document.forms["contact-form"]["email"].value;
+    var antaja = document.forms["contact-form"]["empamount"].value;
+    var viesti = document.forms["contact-form"]["message"].value;
+    
+    if (nimi == "" || maili == "" || antaja == "" || viesti == "") {
+      alert("Tarkista syötetyt tiedot");
+      return false;
+    }
+  }
+
+ /* function validateForm(){
+      var elements = document.getElementById("contact-form").elements;
+      
+      for(var i = 0, element; element = elements[i++];)
+      { 
+          if(element.value == "")
+
+          alert("Tarkista syötetyt tiedot")
+         
+      }
+
+  }*/
+</script>
+</head>
+<body>
+
+<h1>Tämä on lomake</h1>
+
+<form id="contact-form" name="contact-form" method="post" onsubmit="return validateForm()">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="contact-form mt-45">
+                <label>Enter Your Name</label>
+                <input type="text" name="name" placeholder="Full Name">
+            </div> <!-- contact-form -->
+        </div>
+        <div class="col-md-6">
+            <div class="contact-form mt-45">
+                <label>Enter Your Email</label>
+                <input type="email" name="email" placeholder="Email">
+            </div> <!-- contact-form -->
+        </div>
+<div class="col-md-6">
+            <div class="contact-form mt-45">
+                <label>Enter Your Employee amount</label>
+                <input type="text" name="empamount" placeholder="Employee Amount">
+            </div> <!-- contact-form -->
+        </div>
+        <div class="col-md-12">
+            <div class="contact-form mt-45">
+                <label>Your Message</label>
+                <textarea name="message" placeholder="Enter your message..."></textarea>
+            </div> <!-- contact-form -->
+        </div>
+        <p class="form-message"></p>
+        <div class="col-md-12">
+            <div class="contact-form mt-45">
+                <button type="submit" ">Send Now</button>
+
+</body>
+</html>

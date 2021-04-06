@@ -11,6 +11,7 @@
     </head>
     <body>
         <h1 style="text-align: center;">Week 3.1</h1>
+        <div class="tyylitys">
         <article class="artikkeli" id="art1">
             <h1>Tehtävä 1</h1>
             <p>Syötä luku, ohjelma tulostaa kaikki parilliset<br> 
@@ -96,5 +97,25 @@
             <p id="tulos9">Tähän tulostuu suurin ja pienin luku</p>
         </article>
 
+        <article class="artikkeli" id="art10">
+            <h1>Tehtävä 10</h1>
+            <p>Sama kuin tehtävä 2, mutta arpoo random kirjaimen, pelkän ö-kirjaimen sijasta</p>
+            <label for="salis">Anna muokattava salasana:</label>
+            <input type="text" name="salis" id="salisRandom" placeholder="syötä salasana">
+            <button type="button" name="button" onclick="salis()">Muunna</button>
+            <p id="tulos10">Tähän tulostuu uusi salasana </p>
+        </article>
+
+        <article class="artikkeli" id="art11">
+            <h1>Tehtävä 11</h1>
+            <p>Syötä 2 numeroa (jälkimmäisen tulee olla isompi). Ohjelma tulostaa syötettyjen numerojen väliltä parilliset ja parittomat numerot sekä niiden summat</p>
+            <label for="ensimmäinen">Syötä ekanumero</label>
+            <input type="number" name="seEka" id="seEka" placeholder="Syötä ensimmäinen luku">
+            <label for="toinen">Syötä toinen, pitää olla isompi kuin tuo ylempi^</label>
+            <input type="number" name="seToka" id="seToka" placeholder="Syötä toka numero, isompi kuin eka">
+            <button type="button" name="button" onclick="kaksiNumeroa()">Näytä</button>
+            <p id="tulos11">Tähän tulostuu vastaus</p>
+        </article>
+</div>
     </body>
 </html>

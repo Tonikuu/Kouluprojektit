@@ -1,10 +1,12 @@
 .artikkeli
 {
-    width: 15%;
+    width: 10%;
     padding: 1%;
-    margin: 1%;
+    display: block;
     margin-right: 1%;
-    float:left;
+    float: left;
+    
+    
 }
 
 h1
@@ -69,3 +71,18 @@ h1
     font-family: 'Bebas Neue', cursive;
 
 }
+
+#art10
+{
+    background-color:blanchedalmond;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+#art11
+{
+    background-color:darksalmon;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
