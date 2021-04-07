@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="switchCase.css" />
+    <script src="switchCase.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Week 3 switch-case</title>
+  </head>
+  <body>
+    <header>Switch-case harjoitukset</header>
+    
+      <form id="task1" onsubmit="return scrabble()">
+        <h1>Tehtävä 1</h1>
+        <p>
+          Ohjelma, jolle voi syöttää scrable pelin sanan, ja ohjelma laskee
+          pisteet sanalle
+        </p>
+        <label for="syottö1">Anna sana, jonka pisteet lasketaan:</label>
+        <input
+          type="text"
+          name="sana"
+          id="sana"
+          placeholder="Syötä sana"
+          required
+          onkeypress="return event.charCode != 32"
+        />
+        <!--!=32 Poistaa välilyönnin, (keycode 32)  -->
+        <button type="submit" id="nappi1">Laske pisteet sanalle</button>
+        <br /><br />
+      </form>
+
+      <form id="task2" onsubmit="return lotto()">
+        <h1>Tehtävä 2</h1>
+        <p>Ohjelma joka arpoo lottonumerot (7kpl)</p>
+        <button id="nappi2" type="submit">Lottonumerot</button>
+      </form>
+
+      <form id="task3"">
+        <h1>Tehtävä 3</h1>
+        <p>
+          Ohjelma joka muuntaa javascriptissä määritetyn 2-ulotteisen taulukon
+          taulukkomuotoon
+        </p>
+        <button id="nappi3" type="button" onclick="taulukko()">Näytä taulukko</button>
+        <p id="tulos">Taulukko tulostuu tähän</p>
+      </form>
+
+      <form id="task4">
+        <h1>Tehtävä 4</h1>
+        <p>Ohjelma joka arpoo 5 korttia</p>
+        <button id="nappi4" type="button" onclick="kortit()">
+          Arvo kortit
+        </button>
+        <p id="pakka"><strong>Arvotut kortit tulevat tähän:</strong></p>
+    </form>
+    
+  </body>
+</html>

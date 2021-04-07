@@ -1,0 +1,58 @@
+header {
+  font-size: xx-large;
+  font-family: "Kiwi Maru", serif;
+  margin-left: 2.5%;
+}
+
+#task1 {
+  margin-top: 3%;
+  background-color: coral;
+  padding: 2%;
+  width: 25%;
+  border: 2px solid black;
+
+  font-family: "Kiwi Maru", serif;
+}
+#nappi1 {
+  background-color: cyan;
+  margin-right: 11%;
+  float: right;
+  font-family: "Kiwi Maru", serif;
+}
+#task2 {
+  margin-top: 0.5%;
+  background-color: darkcyan;
+  padding: 2%;
+  width: 25%;
+  border: 2px solid black;
+  font-family: "Kiwi Maru", serif;
+}
+#nappi2 {
+  background-color: darkgoldenrod;
+  font-family: "Kiwi Maru", serif;
+}
+#task3 {
+  margin-top: 0.5%;
+  background-color: rgb(203, 223, 95);
+  padding: 2%;
+  width: 25%;
+  border: 2px solid black;
+  font-family: "Kiwi Maru", serif;
+}
+
+#nappi3 {
+  background: darkgray;
+  font-family: "Kiwi Maru", serif;
+}
+#task4 {
+  margin-top: 0.5%;
+  width: 25%;
+  background-color: rgb(131, 178, 231);
+  padding: 2%;
+  border: 2px solid black;
+  font-family: "Kiwi Maru", serif;
+}
+#nappi4 {
+  background: whitesmoke;
+  font-family: "Kiwi Maru", serif;
+}
