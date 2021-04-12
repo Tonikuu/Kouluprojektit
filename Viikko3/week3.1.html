@@ -1,121 +1,255 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <script src="week3.1.js"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="tyylia3.1.css">
-        <title>Week3.1</title>
-    </head>
-    <body>
-        <h1 style="text-align: center;">Week 3.1</h1>
-        <div class="tyylitys">
-        <article class="artikkeli" id="art1">
-            <h1>Tehtävä 1</h1>
-            <p>Syötä luku, ohjelma tulostaa kaikki parilliset<br> 
-                luvut annettuun lukuun asti, poislukien 0:n</p>
-               <input type="number" id="1task" placeholder="Syötä luku">
-               <button style="margin-top: 3%;" type="button" name="button" onclick="parilliset()">Tulosta parilliset</button><br>
-               <p id="tulos">Luvut tulostuvat tähän...</p>
-                
-        </article>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <script src="week3.1.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tyylia3.1.css" />
+    <title>Week3.1</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Week 3.1</h1>
+    <div class="tyylitys">
+      <article class="artikkeli" id="art1">
+        <h1>Tehtävä 1</h1>
+        <p>
+          Syötä luku, ohjelma tulostaa kaikki parilliset<br />
+          luvut annettuun lukuun asti, poislukien 0:n
+        </p>
+        <input type="number" id="1task" placeholder="Syötä luku" />
+        <button
+          style="margin-top: 3%"
+          type="button"
+          name="button"
+          onclick="parilliset()"
+        >
+          Tulosta parilliset</button
+        ><br />
+        <p id="tulos">Luvut tulostuvat tähän...</p>
+      </article>
 
-        <article class="artikkeli" id="art2">
-            <h1>Tehtävä 2</h1>
-            <p>Muuntaa annetun sanan "salasanaksi", laittaa joka toisen kirjaimen jälkeen kirjaimen iso Ö</p>
-            <input type="text" id="2task" placeholder="Syötä sana">
-            <button style="margin-top: 3%;" type="button" name="button" onclick="salasana()">Muunna</button><br>
-            <p id="tulos2">Salasana tulostuu tähän</p>
+      <article class="artikkeli" id="art2">
+        <h1>Tehtävä 2</h1>
+        <p>
+          Muuntaa annetun sanan "salasanaksi", laittaa joka toisen kirjaimen
+          jälkeen kirjaimen iso Ö
+        </p>
+        <input type="text" id="2task" placeholder="Syötä sana" />
+        <button
+          style="margin-top: 3%"
+          type="button"
+          name="button"
+          onclick="salasana()"
+        >
+          Muunna</button
+        ><br />
+        <p id="tulos2">Salasana tulostuu tähän</p>
+      </article>
 
-        </article>
+      <article class="artikkeli" id="art3">
+        <h1>Tehtävä 3</h1>
+        <p>Tarkistaa onko syötetyssä sanassa ö-kirjainta</p>
+        <input type="text" id="3task" placeholder="Syötä sana" />
+        <button
+          style="margin-top: 3%"
+          type="button"
+          name="button"
+          onclick="onkoVaiEi()"
+        >
+          Tarkista onko ö:tä</button
+        ><br />
+        <p id="tulos3">Vastaus tulostuu tähän</p>
+      </article>
 
-        <article class="artikkeli" id="art3">
-            <h1>Tehtävä 3</h1>
-            <p>Tarkistaa onko syötetyssä sanassa ö-kirjainta</p>
-            <input type="text" id="3task" placeholder="Syötä sana">
-            <button style="margin-top: 3%;" type="button" name="button" onclick="onkoVaiEi()">Tarkista onko ö:tä</button><br>
-            <p id="tulos3">Vastaus tulostuu tähän</p>
-        </article>
+      <article class="artikkeli" id="art4">
+        <h1>Tehtävä 4</h1>
+        <p>Laskee annetun luvun kertoman</p>
+        <input type="number" id="4task" placeholder="Syötä luku" />
+        <button
+          style="margin-top: 3%"
+          type="button"
+          name="button"
+          onclick="kertoma()"
+        >
+          Anna kertoma
+        </button>
+        <p id="tulos4">Kertoma tulostuu tähän</p>
+      </article>
 
-        <article class="artikkeli" id="art4">
-            <h1>Tehtävä 4</h1>
-            <p>Laskee annetun luvun kertoman</p>
-            <input type="number" id="4task" placeholder="Syötä luku">
-            <button style="margin-top: 3%;" type="button" name="button" onclick="kertoma()">Anna kertoma</button>
-            <p id="tulos4">Kertoma tulostuu tähän</p>
-        </article>
+      <article class="artikkeli" id="art5">
+        <h1>Tehtävä 5</h1>
+        <p>
+          Tulostaa luvut 1-100<br />
+          - Jos luku on jaollinen 3:lla, tulostaa hip<br />- Jos luku on
+          jaollinen 5:llä, tulostaa heijaa<br />- Jos luku on jaollinen sekä
+          5:llä että 3:lla, tulostaa hipheijaa
+        </p>
+        <button
+          style="margin-top: 3%"
+          type="button"
+          name="button"
+          onclick="jyrinHeijaa()"
+        >
+          Näytäppä hipheijaat
+        </button>
+        <p id="tulos5">Tähän tulee hipheijaat</p>
+      </article>
 
-        <article class="artikkeli" id="art5">
-            <h1>Tehtävä 5</h1>
-            <p>Tulostaa luvut 1-100<br> - Jos luku on jaollinen 3:lla, tulostaa hip<br>- Jos luku on jaollinen 5:llä, tulostaa heijaa<br>- Jos luku on jaollinen sekä 5:llä että 3:lla,   tulostaa
-            hipheijaa</p>
-            <button style="margin-top: 3%;" type="button" name="button" onclick="jyrinHeijaa()">Näytäppä hipheijaat</button>
-            <p id="tulos5">Tähän tulee hipheijaat</p>
-        </article>
+      <article class="artikkeli" id="art6">
+        <h1>Tehtävä 6</h1>
+        <p>Tulostaa numerot 1-10 :)</p>
+        <button
+          style="margin-top: 3%"
+          type="button"
+          name="button"
+          onclick="yhestKybää()"
+        >
+          No mites ne menee?
+        </button>
+        <p id="tulos6">Tähän tulostuu numerot 1-10</p>
+      </article>
 
-        <article class="artikkeli" id="art6">
-            <h1>Tehtävä 6</h1>
-            <p>Tulostaa numerot 1-10 :)</p>
-            <button style="margin-top: 3%;" type="button" name="button" onclick="yhestKybää()">No mites ne menee?</button>
-            <P id="tulos6">Tähän tulostuu numerot 1-10</P>
-        </article>
+      <article class="artikkeli" id="art7">
+        <h1>Tehtävä 7</h1>
+        <p>Laskee 1-10 luvut yhteen</p>
+        <button
+          style="margin-top: 3%"
+          type="button"
+          name="button"
+          onclick="yhteen()"
+        >
+          Laske yhteen ne
+        </button>
+        <p id="tulos7">Tähän tulostuu yhteenlaskun tulos</p>
+      </article>
 
-        <article class="artikkeli" id="art7">
-            <h1>Tehtävä 7</h1>
-            <p>Laskee 1-10 luvut yhteen</p>
-            <button style="margin-top: 3%;" type="button" name="button" onclick="yhteen()">Laske yhteen ne</button>
-            <p id="tulos7">Tähän tulostuu yhteenlaskun tulos</p>
-        </article>
+      <article class="artikkeli" id="art8">
+        <h1>Tehtävä 8</h1>
+        <p>Laskee annetun luvun annettuun potensiin</p>
+        <label for="ekaluku">Syötä korotettava luku</label>
+        <input
+          type="number"
+          name="ekaluku"
+          id="ekaluku"
+          placeholder="Syötä korotettava luku"
+        />
+        <label for="tokaluku">Syötä potenssi</label>
+        <input
+          type="number"
+          name="tokaluku"
+          id="tokaluku"
+          placeholder="Syötä potenssi"
+        />
+        <button
+          style="margin-top: 3%"
+          type="button"
+          name="button"
+          onclick="potenssi()"
+        >
+          Viagra
+        </button>
+        <p id="tulos8">Tähän tulostuu potenssin tulos</p>
+      </article>
 
-        <article class="artikkeli" id="art8">
-            <h1>Tehtävä 8</h1>
-            <p>Laskee annetun luvun annettuun potensiin</p>
-            <label for="ekaluku">Syötä korotettava luku</label>
-            <input type="number" name="ekaluku" id="ekaluku" placeholder="Syötä korotettava luku">
-            <label for="tokaluku">Syötä potenssi</label>
-            <input type="number" name="tokaluku" id="tokaluku" placeholder="Syötä potenssi">
-            <button style="margin-top: 3%;" type="button" name="button" onclick="potenssi()">Viagra</button>
-            <p id="tulos8">Tähän tulostuu potenssin tulos</p>
-        </article>
+      <article class="artikkeli" id="art9">
+        <h1>Tehtävä 9</h1>
+        <p>Etsii syötetyistä luvuista pienimmän ja suurimman</p>
+        <label for="taul1">Syötä ekaluku</label>
+        <input
+          type="number"
+          name="taul1"
+          id="taulukko[0]"
+          placeholder="1.luku"
+        />
+        <label for="taul2">Syötä tokaluku</label>
+        <input
+          type="number"
+          name="taul2"
+          id="taulukko[1]"
+          placeholder="2.luku"
+        />
+        <label for="taul3">Syötä kolmasluku</label>
+        <input
+          type="number"
+          name="taul3"
+          id="taulukko[2]"
+          placeholder="3.luku"
+        />
+        <label for="taul4">Syötä neljäsluku</label>
+        <input
+          type="number"
+          name="taul4"
+          id="taulukko[3]"
+          placeholder="4.luku"
+        />
+        <label for="taul5">Syötä viiesluku</label>
+        <input
+          type="number"
+          name="taulukko[5]"
+          id="taulukko[4]"
+          placeholder="5.luku"
+        />
+        <button
+          style="margin-top: 3%"
+          type="button"
+          name="button"
+          onclick="suurinPienin()"
+        >
+          Etsi ne
+        </button>
+        <p id="tulos9">Tähän tulostuu suurin ja pienin luku</p>
+      </article>
 
-        <article class="artikkeli" id="art9">
-            <h1>Tehtävä 9</h1>
-            <p>Etsii syötetyistä luvuista pienimmän ja suurimman</p>
-            <label for="taul1">Syötä ekaluku</label>
-            <input type="number" name="taul1" id="taulukko[0]" placeholder="1.luku">
-            <label for="taul2">Syötä tokaluku</label>
-            <input type="number" name="taul2" id="taulukko[1]" placeholder="2.luku">
-            <label for="taul3">Syötä kolmasluku</label>
-            <input type="number" name="taul3" id="taulukko[2]" placeholder="3.luku">
-            <label for="taul4">Syötä neljäsluku</label>
-            <input type="number" name="taul4" id="taulukko[3]" placeholder="4.luku">
-            <label for="taul5">Syötä viiesluku</label>
-            <input type="number" name="taulukko[5]" id="taulukko[4]" placeholder="5.luku">
-            <button style="margin-top: 3%;" type="button" name="button" onclick="suurinPienin()">Etsi ne</button>
-            <p id="tulos9">Tähän tulostuu suurin ja pienin luku</p>
-        </article>
+      <article class="artikkeli" id="art10">
+        <h1>Tehtävä 10</h1>
+        <p>
+          Sama kuin tehtävä 2, mutta arpoo random kirjaimen, pelkän ö-kirjaimen
+          sijasta
+        </p>
+        <label for="salis">Anna muokattava salasana:</label>
+        <input
+          type="text"
+          name="salis"
+          id="salisRandom"
+          placeholder="syötä salasana"
+        />
+        <button type="button" name="button" onclick="salis()">Muunna</button>
+        <p id="tulos10">Tähän tulostuu uusi salasana</p>
+      </article>
 
-        <article class="artikkeli" id="art10">
-            <h1>Tehtävä 10</h1>
-            <p>Sama kuin tehtävä 2, mutta arpoo random kirjaimen, pelkän ö-kirjaimen sijasta</p>
-            <label for="salis">Anna muokattava salasana:</label>
-            <input type="text" name="salis" id="salisRandom" placeholder="syötä salasana">
-            <button type="button" name="button" onclick="salis()">Muunna</button>
-            <p id="tulos10">Tähän tulostuu uusi salasana </p>
-        </article>
-
-        <article class="artikkeli" id="art11">
-            <h1>Tehtävä 11</h1>
-            <p>Syötä 2 numeroa (jälkimmäisen tulee olla isompi). Ohjelma tulostaa syötettyjen numerojen väliltä parilliset ja parittomat numerot sekä niiden summat</p>
-            <label for="ensimmäinen">Syötä ekanumero</label>
-            <input type="number" name="seEka" id="seEka" placeholder="Syötä ensimmäinen luku">
-            <label for="toinen">Syötä toinen, pitää olla isompi kuin tuo ylempi^</label>
-            <input type="number" name="seToka" id="seToka" placeholder="Syötä toka numero, isompi kuin eka">
-            <button type="button" name="button" onclick="kaksiNumeroa()">Näytä</button>
-            <p id="tulos11">Tähän tulostuu vastaus</p>
-        </article>
-</div>
-    </body>
+      <article class="artikkeli" id="art11">
+        <h1>Tehtävä 11</h1>
+        <p>
+          Syötä 2 numeroa (jälkimmäisen tulee olla isompi). Ohjelma tulostaa
+          syötettyjen numerojen väliltä parilliset ja parittomat numerot sekä
+          niiden summat
+        </p>
+        <label for="ensimmäinen">Syötä ekanumero</label>
+        <input
+          type="number"
+          name="seEka"
+          id="seEka"
+          placeholder="Syötä ensimmäinen luku"
+        />
+        <label for="toinen"
+          >Syötä toinen, pitää olla isompi kuin tuo ylempi^</label
+        >
+        <input
+          type="number"
+          name="seToka"
+          id="seToka"
+          placeholder="Syötä toka numero, isompi kuin eka"
+        />
+        <button type="button" name="button" onclick="kaksiNumeroa()">
+          Näytä
+        </button>
+        <p id="tulos11">Tähän tulostuu vastaus</p>
+      </article>
+    </div>
+  </body>
 </html>

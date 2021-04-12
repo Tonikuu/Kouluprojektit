@@ -22,14 +22,15 @@ function salasana() {
 }
 
 function onkoVaiEi() {
-  var sana = document.getElementById("3task").value;
-  var tarkista = sana.search(/ö/i);
-
-  if (tarkista === -1) {
-    document.getElementById("tulos3").innerHTML = "Ei löydy";
-  } else if (tarkista === 0) {
-    document.getElementById("tulos3").innerHTML = "Löytyyhän sieltä";
+  //Pitäis olla korjattu nyt /Toni 12.4
+  var annettuSana = document.getElementById("3task").value;
+  var vastaus = "ei ole";
+  for (var k = 0; k < annettuSana.length; k++) {
+    if (annettuSana[k] == "ö" || annettuSana[k] == "Ö") {
+      vastaus = "löytyyhän sieltä";
+    }
   }
+  document.getElementById("tulos3").innerHTML = "<p>" + vastaus + "</p>";
 }
 
 function kertoma() {

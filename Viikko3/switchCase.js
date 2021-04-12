@@ -1,7 +1,7 @@
 function scrabble() {
   var pisteet = 0;
 
-  var sana = document.getElementById("sana").value.toLowerCase();
+  var sana = document.getElementById("sana").value;
 
   for (var i = 0; i <= sana.length; i++) {
     switch (sana[i]) {
@@ -11,6 +11,12 @@ function scrabble() {
       case "n":
       case "s":
       case "t":
+      case "A":
+      case "E":
+      case "I":
+      case "N":
+      case "S":
+      case "T":
         pisteet++;
         break;
 
@@ -18,11 +24,17 @@ function scrabble() {
       case "ä":
       case "k":
       case "l":
+      case "O":
+      case "Ä":
+      case "K":
+      case "L":
         pisteet += 2;
         break;
 
       case "u":
       case "m":
+      case "U":
+      case "M":
         pisteet += 3;
         break;
 
@@ -32,29 +44,40 @@ function scrabble() {
       case "p":
       case "r":
       case "v":
+      case "Y":
+      case "H":
+      case "J":
+      case "P":
+      case "R":
+      case "V":
         pisteet += 4;
         break;
 
       case "ö":
       case "d":
+      case "Ö":
+      case "D":
         pisteet += 7;
         break;
 
       case "b":
       case "f":
       case "g":
+      case "B":
+      case "F":
+      case "G":
         pisteet += 8;
         break;
 
       case "c":
+      case "C":
         pisteet += 10;
         break;
 
-      default:
-        pisteet += 12;
+      //default: Toimii jos tämän comment outtaa ?
+      // pisteet += 12;
     }
   }
-
   alert("Sanasta: " + sana + " saa yhteensä: " + pisteet + " pistettä");
 }
 
